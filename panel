@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FF MAX Demo Panel</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .panel {
+      width: 320px;
+      margin: 50px auto;
+      padding: 25px;
+      background: #222;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #555;
+    }
+
+    h1 {
+      color: #ff9800;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      background: #ff9800;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e68900;
+    }
+
+    #status {
+      margin-top: 15px;
+      color: #00ff88;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="panel">
+  <h1>FF MAX</h1>
+  <p>Demo Training Panel</p>
+
+  <button onclick="demo('Aim Training Started')">
+    🎯 Aim Training
+  </button>
+
+  <button onclick="demo('Sensitivity Demo Opened')">
+    ⚙️ Sensitivity
+  </button>
+
+  <button onclick="demo('UID Search Demo')">
+    👤 UID Search
+  </button>
+
+  <button onclick="demo('Settings Opened')">
+    🔧 Settings
+  </button>
+
+  <button onclick="demo('This is only a demo')">
+    ▶ Start Demo
+  </button>
+
+  <div id="status">Status: Ready</div>
+</div>
+
+<script>
+function demo(message) {
+  document.getElementById("status").innerText =
+    "Status: " + message;
+}
+</script>
+
+</body>
+</html>
